@@ -461,6 +461,34 @@
         orphans: 3;
         widows: 3;
     }
+
+    /* Landing page specific fixes */
+    .hero,
+    .stats-section,
+    .tools-section,
+    .phase-section {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+    
+    /* Keep tool cards together */
+    .tool-card,
+    .feature-card {
+        page-break-inside: avoid;
+        margin-bottom: 15pt;
+    }
+    
+    /* Section headers shouldn't orphan */
+    h2.section-title {
+        page-break-before: auto;
+        page-break-after: avoid;
+        padding-top: 10pt;
+    }
+    
+    /* Keep the stats box together */
+    .stats-box {
+        page-break-inside: avoid;
+    }
     
     .form-group,
     .form-row,
